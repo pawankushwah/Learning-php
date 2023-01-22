@@ -1,24 +1,24 @@
-# Learn About Php
+# Learn About PHP
 ## Some Key Points to remember
 - Declaring a Variable
-    ```php
-        <?php
-            $name = "Pawan kushwah";
-            $class = 12;
-
-            echo "My name is $name. I have passed out $class th";
-            echo "My name is" . $name . ". I have passed out " . $class . "th class";
-        ?>
-    ```
-- In PHP we can comment with "#" , "//" and "/* */"
-  ```php
+```php
     <?php
-        # single line comment
-        // this is also single line comment
-        /* 
-            This is multi line comment 
-         */
+        $name = "Pawan kushwah";
+        $class = 12;
+
+        echo "My name is $name. I have passed out $class th";
+        echo "My name is" . $name . ". I have passed out " . $class . "th class";
     ?>
+```
+- In PHP we can comment with "#" , "//" and "/* */"
+```php
+<?php
+    # single line comment
+    // this is also single line comment
+    /* 
+        This is multi line comment 
+        */
+?>
   ```
 - We can access global variable with the help of "global" keyword
 ```php
@@ -152,17 +152,17 @@
   * . - concatenation 
   * .= - concatenation assignment
   * ??	- Null coalescing
-    ```php
-        <?php
-            // variable $user is the value of $_GET['user']
-            // and 'anonymous' if it does not exist
-            echo $user = $_GET["user"] ?? "anonymous";
-            echo("<br>");
-            
-            // variable $color is "red" if $color does not exist or is null
-            echo $color = $color ?? "red";
-        ?>
-    ```
+```php
+    <?php
+        // variable $user is the value of $_GET['user']
+        // and 'anonymous' if it does not exist
+        echo $user = $_GET["user"] ?? "anonymous";
+        echo("<br>");
+        
+        // variable $color is "red" if $color does not exist or is null
+        echo $color = $color ?? "red";
+    ?>
+```
 * conditionals keyword : if..elseif..if
 * Loops : while, do..while, for and foreach...as
 * starting strict mode
@@ -214,7 +214,7 @@
 * PHP SuperGlobals
     - $GLOBALS
     - $_SERVER
-      - [Server elements](https://www.w3schools.com/php/php_superglobals_server.asp)
+      - \[Server elements](https://www.w3schools.com/php/php_superglobals_server.asp)
     - $_REQUEST
     - $_POST
     - $_GET
@@ -236,13 +236,13 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = $_REQUEST['fname'];
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo $name;
-    }
+        // collect value of input field
+        $name = $_REQUEST['fname'];
+        if (empty($name)) {
+            echo "Name is empty";
+        } else {
+            echo $name;
+        }
     }
     ?>
 
